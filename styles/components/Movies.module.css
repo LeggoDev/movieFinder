@@ -1,0 +1,84 @@
+.Movies {
+  margin-top: 4.38em;
+  position: relative;
+}
+
+.filtres {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  margin-top: 2.19em;
+}
+
+.filtres article {
+  margin-right: 3.13rem;
+}
+
+.filtres article p {
+  font-weight: 400;
+  margin-right: 0.63rem !important;
+}
+
+.filtres article p,
+.filtres article ul span,
+.filtres article ul li {
+  font-family: 'Roboto';
+  font-size: 0.75rem;
+  color: #586e94;
+}
+
+.filtres article ul div,
+.filtres article ul li {
+  padding: 0.75rem 1.25rem;
+}
+
+.filtres article ul {
+  margin-left: 3.38rem;
+  outline: none;
+  border: 1px solid #586e94;
+  border-radius: 14px;
+  font-weight: 700;
+  margin-top: -1.7rem;
+}
+
+.filtres article ul div {
+  display: flex;
+  align-items: center;
+}
+
+.filtres article div span {
+  margin-right: 2.5rem;
+}
+
+.display {
+  margin-top: 6em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.display div {
+  margin-bottom: 2.5em;
+  width: 11rem;
+  height: 16rem;
+}
+
+.display div img {
+  border-radius: 10px;
+}
+
+.display div h3 {
+  margin-top: 0.63rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1rem;
+  color: #ffffff;
+}
+
+.display div span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.88rem;
+  color: #586e94;
+}

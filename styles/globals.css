@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: #0d1d38;
+  font-family: 'Roboto';
+}
+
+h2 {
+  font-family: Roboto-Bold;
+  font-size: 1.63rem;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.ml-4 {
+  margin-left: 4rem !important;
+}

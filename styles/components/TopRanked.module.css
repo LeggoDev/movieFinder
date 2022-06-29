@@ -1,0 +1,52 @@
+.TopRanked article {
+  margin-top: 2.75rem;
+  width: 100%;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.TopRanked button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: #253755;
+}
+
+.TopRanked section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.TopRanked .slide {
+  height: 16rem;
+}
+
+.TopRanked div img {
+  border-radius: 10px;
+}
+
+.TopRanked div h3 {
+  margin-top: 0.63rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  line-height: 1rem;
+  color: #ffffff;
+}
+
+.TopRanked div span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.88rem;
+  color: #586e94;
+}
