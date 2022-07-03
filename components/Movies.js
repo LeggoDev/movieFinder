@@ -73,7 +73,7 @@ const Movies = ({ search, changeTotal, movies, changeMovies }) => {
         </article>
         <article>
           <p>Filtrer par :</p>
-          <ul className='cursor ml-4'
+          <ul className='cursor'
             onClick={() => toggleFilterGender()}
             style={{ backgroundColor: filterGenrer === true ? '#253755' : null }}
           >

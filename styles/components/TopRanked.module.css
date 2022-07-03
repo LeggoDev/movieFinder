@@ -27,12 +27,13 @@
   width: 80%;
 }
 
-.TopRanked .slide {
-  height: 16rem;
-}
-
 .TopRanked div img {
   border-radius: 10px;
+}
+
+.TopRanked div h3,
+.TopRanked div span {
+  width: 8.63rem;
 }
 
 .TopRanked div h3 {
@@ -49,4 +50,10 @@
   font-size: 0.75rem;
   line-height: 0.88rem;
   color: #586e94;
+}
+
+@media screen and (max-width: 375px) {
+  .TopRanked button {
+    display: none;
+  }
 }

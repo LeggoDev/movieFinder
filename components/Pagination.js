@@ -13,7 +13,7 @@ const Pagination = ({ totalPages, changeMovies }) => {
 
   for (let i = 1; i < Math.ceil(totalPages / itemsPerPage); i++) {
     if (i < maxPageNumberLimit + 1 && i > minPageNumberLimit) {
-      pages.push(<li key={i} onClick={() => setCurrentPage(i)} style={{ backgroundColor: currentPage === i ? '#253755' : 'transparent' }}> {i}</li >)
+      pages.push(<li data-testid={i} key={i} onClick={() => setCurrentPage(i)} style={{ backgroundColor: currentPage === i ? '#253755' : 'transparent' }}> {i}</li >)
     }
   }
 
@@ -55,11 +55,11 @@ const Pagination = ({ totalPages, changeMovies }) => {
   return (
     <footer className={styles.Pagination}>
       <ul>
-        <li onClick={previousPage}>
+        <li onClick={previousPage} data-test-id='previous'>
           <Image src='/images/paginationpreviousarrow.svg' alt='previous arrow' width={8} height={40} />
         </li>
         {pages}
-        <li onClick={nextPage}>
+        <li onClick={nextPage} data-test-id='next'>
           <Image src='/images/paginationnextarrow.svg' alt='previous arrow' width={8} height={40} />
         </li>
       </ul>

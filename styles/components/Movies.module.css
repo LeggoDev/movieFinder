@@ -11,12 +11,13 @@
 }
 
 .filtres article {
+  display: flex;
   margin-right: 3.13rem;
 }
 
 .filtres article p {
   font-weight: 400;
-  margin-right: 0.63rem !important;
+  margin-right: 0rem;
 }
 
 .filtres article p,
@@ -33,12 +34,12 @@
 }
 
 .filtres article ul {
-  margin-left: 3.38rem;
+  margin-left: 1.2rem;
   outline: none;
   border: 1px solid #586e94;
   border-radius: 14px;
   font-weight: 700;
-  margin-top: -1.7rem;
+  margin-top: -0.7rem;
 }
 
 .filtres article ul div {
@@ -54,12 +55,13 @@
   margin-top: 6em;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(9.78%, max-content));
+  gap: 2.5rem 12rem;
 }
 
 .display div {
   margin-bottom: 2.5em;
-  width: 11rem;
+  width: 8.63rem;
   height: 16rem;
 }
 
@@ -81,4 +83,24 @@
   font-size: 0.75rem;
   line-height: 0.88rem;
   color: #586e94;
+}
+
+@media screen and (max-width: 375px) {
+  .Movies {
+    margin-top: 1rem;
+  }
+
+  .filtres {
+    flex-direction: column;
+  }
+
+  .filtres article:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+
+  .display {
+    margin-top: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 4rem;
+  }
 }

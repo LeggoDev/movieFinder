@@ -50,7 +50,14 @@ const TopRanked = ({ data }) => {
               if (index < 10) {
                 return (
                   <SwiperSlide>
-                    <div className='slide'>
+                    <div
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        height: '16rem',
+                      }}
+                    >
                       <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt='movie image' width={138} height={200} />
                       <h3>{movie.title}</h3>
                       <span>{movie.release_date && data[0].release_date.split('-')[0]}</span>

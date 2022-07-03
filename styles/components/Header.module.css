@@ -48,3 +48,13 @@
   border: none;
   outline: none;
 }
+
+@media screen and (max-width: 375px) {
+  .Header {
+    flex-direction: column;
+  }
+
+  .Header .form {
+    margin-top: 1.25rem;
+  }
+}

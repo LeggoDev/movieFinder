@@ -30,3 +30,17 @@
   line-height: 1.19rem;
   color: #586e94;
 }
+
+@media screen and (max-width: 375px) {
+  .Pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Pagination ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}

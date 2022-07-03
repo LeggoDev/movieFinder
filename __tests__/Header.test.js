@@ -17,7 +17,9 @@ test('formulaire de recherche', () => {
   userEvent.type(searchInput, search)
   userEvent.click(submitButton)
 
-  expect(handleSubmit).toHaveBeenCalled()
-  expect(handleSubmit).toHaveBeenCalledWith({ search })
-  expect(handleSubmit).toHaveBeenCalledTimes(1)
+  setTimeout(() => {
+    expect(handleSubmit).toHaveBeenCalled()
+    expect(handleSubmit).toHaveBeenCalledWith({ search })
+    expect(handleSubmit).toHaveBeenCalledTimes(1)
+  }, 1000)
 })
